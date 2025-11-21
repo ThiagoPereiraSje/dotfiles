@@ -4,7 +4,7 @@ install_deps:
 
 	# instalar aplicativos
 	sudo apt install -y nwg-look wdisplays foot thunar\
-		pipewire alsa-utils pavucontrol bluetooth blueman wofi\
+		pipewire alsa-utils easyeffects bluetooth blueman wofi\
 		bash-completion neovim kclock htop firefox-esr
 	
 	# instalar o sway
