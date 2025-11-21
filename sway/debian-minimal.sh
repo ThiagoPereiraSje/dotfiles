@@ -1,5 +1,4 @@
 install_deps:
-	@echo "Instalar as dependências"
 	sudo apt update
 
 	# instalar aplicativos
@@ -14,10 +13,10 @@ install_deps:
 	# remover recursos não utilizados
 	sudo apt autoremove -y
 
+	@echo "Instalação concluída com sucesso!"
+
 
 sys_config:
-	@echo "Configurações do sistema"
-
 	# criar diretórios de configuração
 	mkdir -p ~/.config/sway
 	mkdir -p ~/.config/waybar
@@ -38,6 +37,8 @@ sys_config:
 	cp -f fonts/*.ttf ~/.local/share/fonts
 	cp -f shortcuts/*.desktop ~/.local/share/applications
 	cp -f wallpapers/* ~/.local/wallpapers
+
+	@echo "Configuração finalizada com sucesso!"
 
 
 test:
