@@ -1,4 +1,4 @@
-.SILENT: build clean
+.SILENT:
 
 install: install_deps sys_config
 
@@ -9,7 +9,7 @@ install_deps:
 	sudo apt install -y --no-install-recommends --no-install-suggests\
 		nwg-look wdisplays foot pcmanfm\
 		pipewire pipewire-pulse pipewire-audio-client-libraries pavucontrol\
-		bluetooth blueman rofi bash-completion neovim kclock rhythmbox htop gdm3
+		bluetooth blueman wofi bash-completion neovim kclock rhythmbox htop gdm3
 	
 	# instalar o sway
 	sudo apt install -y --no-install-recommends --no-install-suggests\
@@ -36,7 +36,7 @@ sys_config:
 	# criar diretórios de configuração
 	mkdir -p ~/.config/sway
 	mkdir -p ~/.config/waybar
-	mkdir -p ~/.config/rofi
+	mkdir -p ~/.config/wofi
 	mkdir -p ~/.config/foot
 
 	# criar diretórios de assets
@@ -48,7 +48,7 @@ sys_config:
 	# copiar configurações
 	cp -f sway/config.conf ~/.config/sway/config
 	cp -f sway/waybar/config.conf ~/.config/waybar/config
-	cp -f sway/rofi/config.conf ~/.config/rofi/config.rasi
+	cp -f sway/wofi/config.conf ~/.config/wofi/config
 	cp -f sway/foot.ini ~/.config/foot/foot.ini
 
 	# copiar assets
