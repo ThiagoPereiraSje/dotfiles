@@ -34,11 +34,12 @@ install_deps:
 sys_config:
 	# ocultar os comandos do arquivo
 	set +x
-	
+
 	# criar diretórios de configuração
 	mkdir -p ~/.config/sway
 	mkdir -p ~/.config/waybar
 	mkdir -p ~/.config/wofi
+	mkdir -p ~/.config/foot
 
 	# criar diretórios de assets
 	mkdir -p ~/.local/share/fonts
@@ -50,6 +51,7 @@ sys_config:
 	cp -f sway/config.conf ~/.config/sway/config
 	cp -f sway/waybar/config.conf ~/.config/waybar/config
 	cp -f sway/wofi/config.conf ~/.config/wofi/config
+	cp -f sway/foot.ini ~/.config/foot/foot.ini
 
 	# copiar assets
 	cp -f fonts/*.ttf ~/.local/share/fonts
