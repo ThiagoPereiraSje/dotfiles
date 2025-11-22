@@ -1,13 +1,18 @@
 install_deps:
+	# ocultar os comandos do arquivo
+	set +x
+
 	sudo apt update
 
 	# instalar aplicativos
-	sudo apt install -y nwg-look wdisplays foot thunar\
-		pipewire alsa-utils easyeffects bluetooth blueman wofi\
-		bash-completion neovim kclock htop gdm3
+	sudo apt install -y --no-install-recommends --no-install-suggests\
+		nwg-look wdisplays foot pcmanfm\
+		pipewire alsa-utils pavucontrol bluetooth blueman wofi\
+		bash-completion neovim kclock rhythmbox htop gdm3
 	
 	# instalar o sway
-	sudo apt install -y sway sway-backgrounds swaybg xwayland greetd wlgreet\
+	sudo apt install -y --no-install-recommends --no-install-suggests\
+		sway sway-backgrounds swaybg xwayland greetd wlgreet\
 		swappy grim slurp mako-notifier
 
 	# remover recursos não utilizados
@@ -27,6 +32,9 @@ install_deps:
 
 
 sys_config:
+	# ocultar os comandos do arquivo
+	set +x
+	
 	# criar diretórios de configuração
 	mkdir -p ~/.config/sway
 	mkdir -p ~/.config/waybar
