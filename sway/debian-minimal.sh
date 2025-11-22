@@ -14,7 +14,7 @@ install_deps:
 	# instalar o sway
 	sudo apt install -y --no-install-recommends --no-install-suggests\
 		sway sway-backgrounds swaybg xwayland greetd wlgreet\
-		swappy grim slurp mako-notifier
+		swappy grim slurp mako-notifier waybar
 
 	# remover recursos não utilizados
 	sudo apt autoremove -y
