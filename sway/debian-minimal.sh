@@ -8,8 +8,8 @@ install_deps:
 	# instalar aplicativos
 	sudo apt install -y --no-install-recommends --no-install-suggests\
 		nwg-look wdisplays foot pcmanfm\
-		pipewire alsa-utils pavucontrol bluetooth blueman rofi\
-		bash-completion neovim kclock rhythmbox htop gdm3
+		pipewire pipewire-pulse pipewire-audio-client-libraries pavucontrol\
+		bluetooth blueman rofi bash-completion neovim kclock rhythmbox htop gdm3
 	
 	# instalar o sway
 	sudo apt install -y --no-install-recommends --no-install-suggests\
