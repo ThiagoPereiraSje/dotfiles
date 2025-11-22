@@ -23,3 +23,7 @@ sudo mount /dev/sdb1 /mnt/meu_hd
 # Para desmontar
 sudo umount /mnt/meu_hd
 ```
+
+## Referências
+
+- [Drewgrif](https://github.com/drewgrif/jag_dots/tree/main)
