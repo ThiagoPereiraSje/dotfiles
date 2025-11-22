@@ -8,7 +8,7 @@ install_deps:
 	# instalar aplicativos
 	sudo apt install -y --no-install-recommends --no-install-suggests\
 		nwg-look wdisplays foot pcmanfm\
-		pipewire pipewire-pulse libspa-0.2-alsa pipewire-alsa alsa-utils\
+		pipewire pipewire-pulse pipewire-alsa alsa-utils\
 		pipewire-audio-client-libraries wireplumber pavucontrol systemd libpam-systemd\
 		bluetooth libspa-0.2-bluetooth blueman wofi bash-completion neovim\
 		rhythmbox htop gdm3
