@@ -4,11 +4,11 @@ install_deps:
 	# instalar aplicativos
 	sudo apt install -y nwg-look wdisplays foot thunar\
 		pipewire alsa-utils easyeffects bluetooth blueman wofi\
-		bash-completion neovim kclock htop firefox-esr
+		bash-completion neovim kclock htop gdm3
 	
 	# instalar o sway
 	sudo apt install -y sway sway-backgrounds swaybg xwayland greetd wlgreet\
-		swappy mako-notifier
+		swappy grim slurp mako-notifier
 
 	# remover recursos não utilizados
 	sudo apt autoremove -y
