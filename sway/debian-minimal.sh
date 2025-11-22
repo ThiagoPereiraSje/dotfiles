@@ -9,7 +9,7 @@ install_deps:
 	sudo apt install -y --no-install-recommends --no-install-suggests\
 		nwg-look wdisplays foot pcmanfm\
 		pipewire pipewire-pulse pipewire-audio-client-libraries pavucontrol\
-		bluetooth blueman wofi bash-completion neovim kclock rhythmbox htop gdm3
+		bluetooth blueman wofi bash-completion neovim rhythmbox htop gdm3
 	
 	# instalar o sway
 	sudo apt install -y --no-install-recommends --no-install-suggests\
