@@ -1,7 +1,8 @@
-install_deps:
-	# ocultar os comandos do arquivo
-	set +x
+.SILENT: build clean
 
+install: install_deps sys_config
+
+install_deps:
 	sudo apt update
 
 	# instalar aplicativos
@@ -28,13 +29,10 @@ install_deps:
 	sudo chmod +x /usr/local/bin/sway-gdm
 
 	# finalizar
-	@echo "Instalação concluída com sucesso!"
+	echo "Instalação concluída com sucesso!"
 
 
 sys_config:
-	# ocultar os comandos do arquivo
-	set +x
-
 	# criar diretórios de configuração
 	mkdir -p ~/.config/sway
 	mkdir -p ~/.config/waybar
@@ -58,8 +56,8 @@ sys_config:
 	cp -f shortcuts/*.desktop ~/.local/share/applications
 	cp -f wallpapers/* ~/.local/wallpapers
 
-	@echo "Configuração finalizada com sucesso!"
+	echo "Configuração finalizada com sucesso!"
 
 
 test:
-	@echo "configure debian minimal"
+	echo "configure debian minimal"
