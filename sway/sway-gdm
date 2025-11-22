@@ -1,0 +1,3 @@
+#!/bin/sh
+# Necessário para sway iniciado via GDM
+exec dbus-run-session sway

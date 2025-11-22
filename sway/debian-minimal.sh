@@ -13,6 +13,16 @@ install_deps:
 	# remover recursos não utilizados
 	sudo apt autoremove -y
 
+	# configurar o sway
+	sudo mkdir -p /usr/share/wayland-sessions
+	sudo cp -f sway/sway.desktop /usr/share/wayland-sessions
+	sudo cp -f sway/sway-gdm /usr/local/bin
+
+	# permissões de arquivo
+	sudo chmod +x /usr/share/wayland-sessions/sway.desktop
+	sudo chmod +x /usr/local/bin/sway-gdm
+
+	# finalizar
 	@echo "Instalação concluída com sucesso!"
 
 
