@@ -16,4 +16,10 @@ setxkbmap br
 
 # Para listar os dipositivos de bloco do sistema
 lsblk
+
+# Para montar um hd
+sudo mount /dev/sdb1 /mnt/meu_hd
+
+# Para desmontar
+sudo umount /mnt/meu_hd
 ```
