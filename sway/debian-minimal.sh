@@ -31,7 +31,7 @@ install_deps:
 	sudo chmod +x /usr/local/bin/sway-gdm
 
 	# finalizar
-	echo "Instalação concluída com sucesso!"
+	echo "Instalação das dependências concluída com sucesso!"
 
 
 sway_config:
@@ -51,6 +51,7 @@ sway_config:
 	cp -f sway/config.conf ~/.config/sway/config
 	cp -f sway/waybar/config.conf ~/.config/waybar/config
 	cp -f sway/wofi/config.conf ~/.config/wofi/config
+	cp -f sway/wofi/style.css ~/.config/wofi/style.css
 	cp -f sway/foot.ini ~/.config/foot/foot.ini
 
 	# copiar assets
