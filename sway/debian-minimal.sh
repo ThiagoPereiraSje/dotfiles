@@ -60,7 +60,7 @@ sway_config:
 	cp -f fonts/*.ttf ~/.local/share/fonts
 	cp -f shortcuts/*.desktop ~/.local/share/applications
 	cp -f wallpapers/* ~/.local/wallpapers
-	cp -f themes/* ~/.themes
+	cp -f -r themes/* ~/.themes
 
 	echo "Configuração do sway finalizada com sucesso!"
 
