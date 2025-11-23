@@ -46,6 +46,7 @@ sway_config:
 	mkdir -p ~/.local/share/applications
 	mkdir -p ~/.local/wallpapers
 	mkdir -p ~/.local/bin
+	mkdir -p ~/.themes
 
 	# copiar configurações
 	cp -f sway/config.conf ~/.config/sway/config
@@ -59,6 +60,7 @@ sway_config:
 	cp -f fonts/*.ttf ~/.local/share/fonts
 	cp -f shortcuts/*.desktop ~/.local/share/applications
 	cp -f wallpapers/* ~/.local/wallpapers
+	cp -f themes/* ~/.themes
 
 	echo "Configuração do sway finalizada com sucesso!"
 
