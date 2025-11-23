@@ -9,7 +9,7 @@ install_deps:
 	sudo apt install -y --no-install-recommends --no-install-suggests\
 		nwg-look wdisplays foot pcmanfm\
 		pipewire pipewire-pulse pipewire-alsa alsa-utils\
-		pipewire-audio-client-libraries wireplumber pavucontrol systemd libpam-systemd\
+		pipewire-audio-client-libraries wireplumber pavucontrol\
 		bluetooth libspa-0.2-bluetooth blueman wofi bash-completion neovim\
 		rhythmbox htop gdm3
 	
@@ -50,6 +50,7 @@ sway_config:
 	# copiar configurações
 	cp -f sway/config.conf ~/.config/sway/config
 	cp -f sway/waybar/config.conf ~/.config/waybar/config
+	cp -f sway/waybar/style.css ~/.config/waybar/style.css
 	cp -f sway/wofi/config.conf ~/.config/wofi/config
 	cp -f sway/wofi/style.css ~/.config/wofi/style.css
 	cp -f sway/foot.ini ~/.config/foot/foot.ini
