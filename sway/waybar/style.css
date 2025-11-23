@@ -1,6 +1,6 @@
 * {
   font-family: UbuntuNerdFont-Medium;
-  font-size: 13px;
+  font-size: 14px;
   min-height: 0;
   color: #c5c8c6;
 }
@@ -33,7 +33,7 @@ window#waybar {
   background: #587d8f;
 }
 
-#tray,
+/* #tray,
 #mpd,
 #custom-weather,
 #cpu,
@@ -50,4 +50,4 @@ window#waybar {
 #clock,
 #network {
   padding: 0 10px;
-}
+} */
