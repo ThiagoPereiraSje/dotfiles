@@ -4,8 +4,8 @@
 
 ```bash
 make -f sway/debian-minimal.sh test
-make -f sway/debian-minimal.sh install_deps
-make -f sway/debian-minimal.sh sys_config
+make -f sway/debian-minimal.sh install
+make -f sway/debian-minimal.sh sway_config
 ```
 
 ## Comandos úteis
