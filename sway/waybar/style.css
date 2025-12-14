@@ -9,6 +9,11 @@ window#waybar {
   background-color: #1f1f1f;
 }
 
+#workspaces button {
+  margin: 0px;
+  padding: 4px;
+}
+
 #workspaces button.active,
 #workspaces button.focused {
   border-bottom: 1px solid #4c7899;
