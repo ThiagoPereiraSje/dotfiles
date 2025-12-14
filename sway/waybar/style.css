@@ -13,7 +13,3 @@ window#waybar {
 #workspaces button.focused {
   border-bottom: 1px solid #4c7899;
 }
-
-#workspaces button {
-  width: 16px;
-}
