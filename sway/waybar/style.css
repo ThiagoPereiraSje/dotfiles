@@ -14,6 +14,10 @@ window#waybar {
   padding: 4px;
 }
 
+#workspaces button:hover {
+  background-color: #111;
+}
+
 #workspaces button.active,
 #workspaces button.focused {
   border-bottom: 1px solid #4c7899;
