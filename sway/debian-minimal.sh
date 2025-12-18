@@ -9,7 +9,7 @@ install_deps:
 	sudo apt install -y --no-install-recommends --no-install-suggests\
 		nwg-look wdisplays foot pcmanfm\
 		pipewire pipewire-pulse pipewire-alsa\
-		pipewire-audio-client-libraries wireplumber wireplumber-bin pwvucontrol\
+		pipewire-audio-client-libraries wireplumber\
 		bluetooth libspa-0.2-bluetooth blueman wofi bash-completion neovim\
 		htop gdm3 papirus-icon-theme
 	
