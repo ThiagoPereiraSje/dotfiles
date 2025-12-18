@@ -22,6 +22,12 @@ sudo mount /dev/sdb1 /mnt/meu_hd
 
 # Para desmontar
 sudo umount /mnt/meu_hd
+
+# Dispositivos de áudio disponíveis
+wpctl status
+
+# Escolher saída de audio ou microfone padrão
+wpctl set-default 48
 ```
 
 ## Referências
