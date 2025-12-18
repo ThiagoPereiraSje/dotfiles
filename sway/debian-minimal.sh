@@ -11,7 +11,7 @@ install_deps:
 		pipewire pipewire-pulse pipewire-alsa\
 		pipewire-audio-client-libraries wireplumber wireplumber-bin pwvucontrol\
 		bluetooth libspa-0.2-bluetooth blueman wofi bash-completion neovim\
-		rhythmbox htop gdm3 papirus-icon-theme
+		htop gdm3 papirus-icon-theme
 	
 	# instalar o sway
 	sudo apt install -y --no-install-recommends --no-install-suggests\
