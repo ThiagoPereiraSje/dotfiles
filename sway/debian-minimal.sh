@@ -13,6 +13,11 @@ install_deps:
 		bluetooth libspa-0.2-bluetooth blueman wofi bash-completion neovim\
 		htop gdm3 papirus-icon-theme
 	
+	# setup mínimo no sway (GTK sem erros)
+	sudo apt install -y --no-install-recommends --no-install-suggests\
+		dbus-user-session at-spi2-core at-spi2-common xdg-desktop-portal\
+		xdg-desktop-portal-wlr
+	
 	# instalar o sway
 	sudo apt install -y --no-install-recommends --no-install-suggests\
 		sway swaybg xwayland greetd wlgreet\
