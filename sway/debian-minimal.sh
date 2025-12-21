@@ -11,7 +11,7 @@ install_deps:
 		pipewire pipewire-pulse pipewire-alsa\
 		pipewire-audio-client-libraries wireplumber\
 		bluetooth libspa-0.2-bluetooth blueman wofi bash-completion neovim\
-		htop gdm3 papirus-icon-theme
+		htop gdm3 papirus-icon-theme tmux
 	
 	# setup mínimo no sway (GTK sem erros)
 	sudo apt install -y --no-install-recommends --no-install-suggests\
@@ -63,7 +63,8 @@ sway_config:
 
 	cp -f sway/wofi/config.conf ~/.config/wofi/config
 	cp -f sway/wofi/style.css ~/.config/wofi/style.css
-	cp -f sway/foot.ini ~/.config/foot/foot.ini
+	cp -f sway/foot/foot.ini ~/.config/foot/foot.ini
+	cp -f sway/foot/tmux.conf ~/.tmux.conf
 
 	# copiar assets
 	cp -f fonts/*.ttf ~/.local/share/fonts
