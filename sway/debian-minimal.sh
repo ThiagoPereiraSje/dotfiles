@@ -55,8 +55,12 @@ sway_config:
 
 	# copiar configurações
 	cp -f sway/config.conf ~/.config/sway/config
+	
 	cp -f sway/waybar/config.conf ~/.config/waybar/config
 	cp -f sway/waybar/style.css ~/.config/waybar/style.css
+	cp -f sway/waybar/mic_vol.sh ~/.config/waybar/mic_vol.sh
+	chmod +x ~/.config/waybar/mic_vol.sh
+
 	cp -f sway/wofi/config.conf ~/.config/wofi/config
 	cp -f sway/wofi/style.css ~/.config/wofi/style.css
 	cp -f sway/foot.ini ~/.config/foot/foot.ini
