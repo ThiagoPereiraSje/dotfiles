@@ -55,6 +55,8 @@ sway_config:
 
 	# copiar configurações
 	cp -f sway/config.conf ~/.config/sway/config
+	cp -f sway/dpms-toggle.sh ~/.local/bin/sway-dpms-toggle
+	chmod +x ~/.local/bin/sway-dpms-toggle
 	
 	cp -f sway/waybar/config.conf ~/.config/waybar/config
 	cp -f sway/waybar/style.css ~/.config/waybar/style.css
