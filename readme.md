@@ -28,6 +28,9 @@ wpctl status
 
 # Escolher saída de audio ou microfone padrão
 wpctl set-default 48
+
+# Para descobrir a classe de alguma janela
+xprop | grep WM_CLASS
 ```
 
 ## Referências
