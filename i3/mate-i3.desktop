@@ -1,6 +1,0 @@
-[Desktop Entry]
-Name=MATE + i3
-Comment=MATE Desktop with i3 Window Manager
-Exec=mate-session --session=i3
-Type=Application
-DesktopNames=MATE
