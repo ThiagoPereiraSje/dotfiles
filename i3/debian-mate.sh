@@ -28,5 +28,5 @@ i3_config:
 	mkdir -p ~/.config/i3
 	mkdir -p ~/.config/rofi
 
-	cp -f i3/config.conf ~/.config/i3/config
+	cp -f i3/config-mate.conf ~/.config/i3/config
 	cp -f i3/rofi/config.conf ~/.config/rofi/config.rasi
