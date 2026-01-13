@@ -7,7 +7,9 @@ install_deps:
 
 	# instalar dependências
 	sudo apt install -y\
-		i3 rofi picom papirus-icon-theme bash-completion htop
+		i3 rofi picom feh papirus-icon-theme bash-completion htop\
+		pipewire pipewire-pulse pipewire-alsa\
+		pipewire-audio-client-libraries wireplumber
 	
 	# remover dependências quebradas
 	sudo apt autoremove -y
