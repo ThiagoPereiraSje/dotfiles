@@ -7,7 +7,7 @@ install_deps:
 
 	# instalar dependências
 	sudo apt install -y\
-		i3 rofi picom feh papirus-icon-theme bash-completion htop\
+		i3 i3blocks rofi picom feh papirus-icon-theme bash-completion htop\
 		pipewire pipewire-pulse pipewire-alsa\
 		pipewire-audio-client-libraries wireplumber
 	
@@ -32,7 +32,7 @@ install_brave:
 i3_config:
 	# diretórios de configuração
 	mkdir -p ~/.config/i3
-	mkdir -p ~/.config/i3status
+	mkdir -p ~/.config/i3blocks
 	mkdir -p ~/.config/rofi
 
 	# assets
@@ -44,14 +44,14 @@ i3_config:
 
 	# copiar as configurações
 	cp -f i3/config-lxde.conf ~/.config/i3/config
-	cp -f i3/i3status/config.conf ~/.config/i3status/config
+	cp -f i3/i3blocks/config.conf ~/.config/i3blocks/config
 	cp -f i3/rofi/config.conf ~/.config/rofi/config.rasi
 
 	# permissão para arquivos de script
-	cp -f i3/i3status/i3_datetime.sh ~/.local/bin/i3_datetime.sh
-	cp -f i3/i3status/i3_mic.sh ~/.local/bin/i3_mic.sh
-	chmod +x ~/.local/bin/i3_datetime.sh
-	chmod +x ~/.local/bin/i3_mic.sh
+	cp -f i3/i3blocks/i3datetime.sh ~/.local/bin/i3datetime
+	cp -f i3/i3blocks/i3mic.sh ~/.local/bin/i3mic
+	chmod +x ~/.local/bin/i3datetime
+	chmod +x ~/.local/bin/i3mic
 
 	# copiar os assets
 	cp -f fonts/*.ttf ~/.local/share/fonts
