@@ -44,8 +44,14 @@ i3_config:
 
 	# copiar as configurações
 	cp -f i3/config-lxde.conf ~/.config/i3/config
-	cp -f i3/i3status.conf ~/.config/i3status/config
+	cp -f i3/i3status/config.conf ~/.config/i3status/config
+	cp -f i3/i3status/datetime.sh ~/.config/i3status/datetime.sh
+	cp -f i3/i3status/mic_vol.sh ~/.config/i3status/mic_vol.sh
 	cp -f i3/rofi/config.conf ~/.config/rofi/config.rasi
+
+	# permissão para arquivos de script
+	chmod +x ~/.config/i3status/datetime.sh
+	chmod +x ~/.config/i3status/mic_vol.sh
 
 	# copiar os assets
 	cp -f fonts/*.ttf ~/.local/share/fonts
