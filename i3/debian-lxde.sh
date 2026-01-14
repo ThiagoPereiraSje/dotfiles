@@ -49,8 +49,10 @@ i3_config:
 
 	# permissão para arquivos de script
 	cp -f i3/i3blocks/i3datetime.sh ~/.local/bin/i3datetime
+	cp -f i3/i3blocks/i3vol.sh ~/.local/bin/i3vol
 	cp -f i3/i3blocks/i3mic.sh ~/.local/bin/i3mic
 	chmod +x ~/.local/bin/i3datetime
+	chmod +x ~/.local/bin/i3vol
 	chmod +x ~/.local/bin/i3mic
 
 	# copiar os assets
