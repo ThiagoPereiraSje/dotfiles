@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 OUT=$(LC_ALL=C wpctl get-volume @DEFAULT_AUDIO_SOURCE@)
 VOL=$(echo "$OUT" | awk '{print $2}')
