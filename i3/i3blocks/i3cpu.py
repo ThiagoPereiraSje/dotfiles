@@ -18,4 +18,11 @@ total_delta = total2 - total1
 
 usage = 100 * (1 - idle_delta / total_delta)
 
-print(f"CPU: {usage:.1f}%")
+color = "#98c379"
+
+if usage > 40:
+  color = "#e5c07b"
+elif usage > 70:
+  color = "#e06c75"
+
+print(f"<span color='{color}'>CPU: {usage:.1f}%</span>")
