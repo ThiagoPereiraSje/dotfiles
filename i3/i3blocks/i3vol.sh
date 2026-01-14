@@ -4,7 +4,7 @@ OUT=$(LC_ALL=C wpctl get-volume @DEFAULT_AUDIO_SINK@)
 VOL=$(echo "$OUT" | awk '{print $2}')
 
 if echo "$OUT" | grep -q MUTED; then
-  echo "MIC: ${VOL}%"
+  echo "VOL: MUTE"
 else
-  echo "MIC: MUTE"
+  echo "VOL: ${VOL}%"
 fi
