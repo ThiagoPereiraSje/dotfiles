@@ -48,12 +48,12 @@ i3_config:
 	cp -f i3/rofi/config.conf ~/.config/rofi/config.rasi
 
 	# permissão para arquivos de script
-	cp -f i3/i3blocks/i3datetime.sh ~/.local/bin/i3datetime
+	cp -f i3/i3blocks/i3datetime.py ~/.local/bin/i3datetime.py
 	cp -f i3/i3blocks/i3cpu.py ~/.local/bin/i3cpu.py
 	cp -f i3/i3blocks/i3mem.py ~/.local/bin/i3mem.py
 	cp -f i3/i3blocks/i3vol.sh ~/.local/bin/i3vol
 	cp -f i3/i3blocks/i3mic.sh ~/.local/bin/i3mic
-	chmod +x ~/.local/bin/i3datetime
+	chmod +x ~/.local/bin/i3datetime.py
 	chmod +x ~/.local/bin/i3cpu.py
 	chmod +x ~/.local/bin/i3mem.py
 	chmod +x ~/.local/bin/i3vol
