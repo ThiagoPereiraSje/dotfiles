@@ -7,11 +7,11 @@ install_deps:
 
 	# instalar aplicativos
 	sudo apt install -y --no-install-recommends --no-install-suggests\
-		nwg-look wdisplays foot pcmanfm\
+		nwg-look wdisplays kitty pcmanfm\
 		pipewire pipewire-pulse pipewire-alsa\
 		pipewire-audio-client-libraries wireplumber\
 		bluetooth libspa-0.2-bluetooth blueman wofi bash-completion neovim\
-		htop gdm3 papirus-icon-theme tmux
+		htop gdm3 papirus-icon-theme
 	
 	# setup mínimo no sway (GTK sem erros)
 	sudo apt install -y --no-install-recommends --no-install-suggests\
@@ -44,7 +44,7 @@ sway_config:
 	mkdir -p ~/.config/sway
 	mkdir -p ~/.config/waybar
 	mkdir -p ~/.config/wofi
-	mkdir -p ~/.config/foot
+	mkdir -p ~/.config/kitty
 
 	# criar diretórios de assets
 	mkdir -p ~/.local/share/fonts
@@ -65,8 +65,7 @@ sway_config:
 
 	cp -f sway/wofi/config.conf ~/.config/wofi/config
 	cp -f sway/wofi/style.css ~/.config/wofi/style.css
-	cp -f sway/foot/foot.ini ~/.config/foot/foot.ini
-	cp -f sway/foot/tmux.conf ~/.tmux.conf
+	cp -f sway/kitty/kitty.conf ~/.config/kitty/kitty.conf
 
 	# copiar assets
 	cp -f fonts/*.ttf ~/.local/share/fonts
