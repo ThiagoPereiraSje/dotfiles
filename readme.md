@@ -31,6 +31,9 @@ wpctl set-default 48
 
 # Para descobrir a classe de alguma janela
 xprop | grep WM_CLASS
+
+# Para aplicar temas no terminal kitty
+kitty +kitten themes
 ```
 
 ## Referências
