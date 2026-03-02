@@ -60,7 +60,9 @@ sway_config:
 	
 	cp -f sway/waybar/config.conf ~/.config/waybar/config
 	cp -f sway/waybar/style.css ~/.config/waybar/style.css
+	cp -f sway/waybar/datetime.py ~/.config/waybar/datetime.py
 	cp -f sway/waybar/mic_vol.sh ~/.config/waybar/mic_vol.sh
+	chmod +x ~/.config/waybar/datetime.py
 	chmod +x ~/.config/waybar/mic_vol.sh
 
 	cp -f sway/wofi/config.conf ~/.config/wofi/config
