@@ -26,7 +26,7 @@ elif usage_gb > 8:
   css_class = "hight"
 
 output = {
-  "text": f"RAM: {usage_gb:.3f}%",
+  "text": f"RAM: {usage_gb:.3f} GB",
   "tooltip": "Uso de Memória",
   "class": css_class
 }
