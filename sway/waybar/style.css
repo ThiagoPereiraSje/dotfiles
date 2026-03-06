@@ -22,3 +22,27 @@ window#waybar {
 #workspaces button.focused {
   border-bottom: 1px solid #4c7899;
 }
+
+#custom-cpu.low {
+  color: #98c379;
+}
+
+#custom-cpu.normal {
+  color: #e5c07b;
+}
+
+#custom-cpu.hight {
+  color: #e06c75;
+}
+
+#custom-mem.low {
+  color: #98c379;
+}
+
+#custom-mem.normal {
+  color: #e5c07b;
+}
+
+#custom-mem.hight {
+  color: #e06c75;
+}
