@@ -1,19 +1,32 @@
+#!/usr/bin/env python3
+
 import json
-import psutil
 
-mem = psutil.virtual_memory()
+def read_meminfo():
+  mem = {}
+  with open("/proc/meminfo") as f:
+    for line in f:
+      key, value = line.split(":", 1)
+      mem[key] = int(value.strip().split()[0])
+  return mem
 
-usage = mem.used / (1024**3)
+mem = read_meminfo()
+
+total_kb = mem["MemTotal"]
+available_kb = mem["MemAvailable"]
+used_kb = total_kb - available_kb
+
+usage_gb = used_kb / 1024 / 1024
 
 css_class = "low"
 
-if usage > 4:
+if usage_gb > 4:
   css_class = "normal"
-elif usage > 8:
+elif usage_gb > 8:
   css_class = "hight"
 
 output = {
-  "text": f"RAM: {usage:.3f}%",
+  "text": f"RAM: {usage_gb:.3f}%",
   "tooltip": "Uso de Memória",
   "class": css_class
 }
