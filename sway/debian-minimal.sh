@@ -61,9 +61,13 @@ sway_config:
 	cp -f sway/waybar/config.conf ~/.config/waybar/config
 	cp -f sway/waybar/style.css ~/.config/waybar/style.css
 	cp -f sway/waybar/wl_datetime.py ~/.config/waybar/wl_datetime.py
-	cp -f sway/waybar/mic_vol.sh ~/.config/waybar/mic_vol.sh
+	cp -f sway/waybar/wl_cpu.py ~/.config/waybar/wl_cpu.py
+	cp -f sway/waybar/wl_mem.py ~/.config/waybar/wl_mem.py
+	cp -f sway/waybar/wl_mic.py ~/.config/waybar/wl_mic.py
 	chmod +x ~/.config/waybar/wl_datetime.py
-	chmod +x ~/.config/waybar/mic_vol.sh
+	chmod +x ~/.config/waybar/wl_cpu.py
+	chmod +x ~/.config/waybar/wl_mem.py
+	chmod +x ~/.config/waybar/wl_mic.py
 
 	cp -f sway/wofi/config.conf ~/.config/wofi/config
 	cp -f sway/wofi/style.css ~/.config/wofi/style.css
