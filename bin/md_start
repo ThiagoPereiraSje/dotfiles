@@ -1,0 +1,1 @@
+nohup md_server > ~/.local/http_server.log 2>&1 &
