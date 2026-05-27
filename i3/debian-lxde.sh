@@ -7,9 +7,7 @@ install_deps:
 
 	# instalar dependências
 	sudo apt install -y\
-		i3 i3blocks rofi picom feh bash-completion htop jq maim slop\
-		pipewire pipewire-pulse pipewire-alsa\
-		pipewire-audio-client-libraries wireplumber
+		i3 i3blocks rofi picom feh bash-completion htop jq maim slop neovim
 	
 	# remover dependências quebradas
 	sudo apt autoremove -y
@@ -52,7 +50,6 @@ i3_config:
 
 	# copiar os assets
 	cp -f fonts/*.ttf ~/.local/share/fonts
-	cp -f shortcuts/*.desktop ~/.local/share/applications
 	cp -f wallpapers/* ~/.local/wallpapers
 	cp -f -r themes/* ~/.themes
 
