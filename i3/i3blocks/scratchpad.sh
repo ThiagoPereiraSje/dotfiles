@@ -7,4 +7,4 @@ count=$(i3-msg -t get_tree | jq '
 ] | length
 ')
 
-echo " $count"
+[ "$count" -gt 0 ] && echo "  $count"
