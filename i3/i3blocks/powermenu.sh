@@ -10,7 +10,7 @@ case "$chosen" in
     " Reiniciar")
         systemctl reboot
         ;;
-    " Logout")
+    " Logout")
         i3-msg exit
         ;;
 esac
