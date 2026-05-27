@@ -1,13 +1,13 @@
 .SILENT:
 
-install: install_deps install_brave i3_config
+install: install_deps i3_config
 
 install_deps:
 	sudo apt update
 
 	# instalar dependências
 	sudo apt install -y\
-		i3 i3blocks rofi picom feh papirus-icon-theme bash-completion htop\
+		i3 i3blocks rofi picom feh bash-completion htop jq maim slop\
 		pipewire pipewire-pulse pipewire-alsa\
 		pipewire-audio-client-libraries wireplumber
 	
@@ -16,17 +16,6 @@ install_deps:
 
 	# finalizar
 	echo "Instalação das dependências concluída com sucesso!"
-
-
-install_brave:
-	sudo apt install -y curl
-	sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-	sudo curl -fsSLo /etc/apt/sources.list.d/brave-browser-release.sources https://brave-browser-apt-release.s3.brave.com/brave-browser.sources
-	sudo apt update
-	sudo apt install -y brave-browser
-
-	# finalizar
-	echo "Instalação do brave finalizada com sucesso!"
 
 
 i3_config:
@@ -49,11 +38,13 @@ i3_config:
 
 	# permissão para arquivos de script
 	cp -f i3/i3blocks/i3datetime.py ~/.local/bin/i3datetime.py
+	cp -f i3/i3blocks/sratchpad.sh ~/.local/bin/sratchpad
 	cp -f i3/i3blocks/i3cpu.py ~/.local/bin/i3cpu.py
 	cp -f i3/i3blocks/i3mem.py ~/.local/bin/i3mem.py
 	cp -f i3/i3blocks/i3vol.py ~/.local/bin/i3vol.py
 	cp -f i3/i3blocks/i3mic.py ~/.local/bin/i3mic.py
 	chmod +x ~/.local/bin/i3datetime.py
+	chmod +x ~/.local/bin/sratchpad
 	chmod +x ~/.local/bin/i3cpu.py
 	chmod +x ~/.local/bin/i3mem.py
 	chmod +x ~/.local/bin/i3vol.py

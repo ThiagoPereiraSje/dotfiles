@@ -14,4 +14,4 @@ dias = [
 now = datetime.now()
 dia = dias[now.weekday()]
 
-print(f"{dia} {now:%d/%m/%Y %H:%M}")
+print(f"{dia} {now:%d/%m/%Y}")
