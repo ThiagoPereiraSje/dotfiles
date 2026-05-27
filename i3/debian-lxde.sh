@@ -36,13 +36,13 @@ i3_config:
 
 	# permissão para arquivos de script
 	cp -f i3/i3blocks/i3datetime.py ~/.local/bin/i3datetime.py
-	cp -f i3/i3blocks/sratchpad.sh ~/.local/bin/sratchpad
+	cp -f i3/i3blocks/scratchpad.sh ~/.local/bin/scratchpad
 	cp -f i3/i3blocks/i3cpu.py ~/.local/bin/i3cpu.py
 	cp -f i3/i3blocks/i3mem.py ~/.local/bin/i3mem.py
 	cp -f i3/i3blocks/i3vol.py ~/.local/bin/i3vol.py
 	cp -f i3/i3blocks/i3mic.py ~/.local/bin/i3mic.py
 	chmod +x ~/.local/bin/i3datetime.py
-	chmod +x ~/.local/bin/sratchpad
+	chmod +x ~/.local/bin/scratchpad
 	chmod +x ~/.local/bin/i3cpu.py
 	chmod +x ~/.local/bin/i3mem.py
 	chmod +x ~/.local/bin/i3vol.py
