@@ -10,7 +10,7 @@ install_deps:
 		xorg lightdm suckless-tools pipewire wireplumber pavucontrol\
 		lxappearance lxrandr lxtask lxterminal pcmanfm\
 		network-manager network-manager-gnome\
-		bluetooth blueman\
+		bluetooth blueman alsa-utils\
 		i3 i3blocks rofi picom feh bash-completion htop jq maim slop neovim
 
 	# ativar o gerenciador de rede
