@@ -1,6 +1,6 @@
 #!/bin/bash
 
-chosen=$(printf " Desligar\n Reiniciar\n Logout\n" | \
+chosen=$(printf " Desligar\n Reiniciar\n Logout\n" | \
 rofi -dmenu -i -p "Power Menu")
 
 case "$chosen" in
