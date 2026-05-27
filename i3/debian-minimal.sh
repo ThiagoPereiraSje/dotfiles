@@ -7,7 +7,7 @@ install_deps:
 
 	# instalar dependências
 	sudo apt install -y\
-		xorg lightdm suckless-tools pipewire wireplumber pavucontrol\
+		xorg lightdm suckless-tools pipewire wireplumber\
 		lxappearance lxrandr lxtask lxterminal pcmanfm\
 		network-manager network-manager-gnome\
 		bluetooth blueman alsa-utils\
