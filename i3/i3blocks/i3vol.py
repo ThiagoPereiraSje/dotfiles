@@ -4,17 +4,16 @@ import re
 
 def get_volume():
   output = subprocess.check_output(
-      ["amixer", "get", "Master"],
-      text=True
+    ["wpctl", "get-volume", "@DEFAULT_AUDIO_SINK@"],
+    text=True
   )
 
-  volume_match = re.search(r"\[(\d+)%\]", output)
-  mute_match = re.search(r"\[(on|off)\]", output)
+  muted = "MUTED" in output
 
-  volume = int(volume_match.group(1)) if volume_match else 0
-  muted = mute_match.group(1) == "off" if mute_match else False
+  match = re.search(r"Volume:\s+([0-9.]+)", output)
+  volume = float(match.group(1)) if match else 0.0
 
-  return volume, muted
+  return int(volume * 100), muted
 
 volume, muted = get_volume()
 
