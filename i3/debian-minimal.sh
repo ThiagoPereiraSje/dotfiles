@@ -38,7 +38,7 @@ i3_config:
 	mkdir -p ~/.themes
 
 	# copiar as configurações
-	cp -f i3/config-lxde.conf ~/.config/i3/config
+	cp -f i3/config.conf ~/.config/i3/config
 	cp -f i3/i3blocks/config.conf ~/.config/i3blocks/config
 	cp -f i3/rofi/config.conf ~/.config/rofi/config.rasi
 
