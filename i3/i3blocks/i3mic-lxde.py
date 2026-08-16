@@ -4,7 +4,7 @@ import re
 
 def get_volume():
   output = subprocess.check_output(
-    ["amixer", "get", "Capture"],
+    ["amixer", "get", "Mic"],
     text=True
   )
 
