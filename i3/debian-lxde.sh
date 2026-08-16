@@ -7,7 +7,7 @@ install_deps:
 
 	# instalar dependências
 	sudo apt install -y\
-		i3 i3blocks rofi picom feh bash-completion htop jq maim slop neovim
+		i3 i3blocks rofi picom feh bash-completion htop jq maim slop pipewire pipewire-pulse wireplumber
 	
 	# remover dependências quebradas
 	sudo apt autoremove -y
@@ -39,8 +39,8 @@ i3_config:
 	cp -f i3/i3blocks/scratchpad.sh ~/.local/bin/scratchpad
 	cp -f i3/i3blocks/i3cpu.py ~/.local/bin/i3cpu.py
 	cp -f i3/i3blocks/i3mem.py ~/.local/bin/i3mem.py
-	cp -f i3/i3blocks/i3vol-lxde.py ~/.local/bin/i3vol.py
-	cp -f i3/i3blocks/i3mic-lxde.py ~/.local/bin/i3mic.py
+	cp -f i3/i3blocks/i3vol.py ~/.local/bin/i3vol.py
+	cp -f i3/i3blocks/i3mic.py ~/.local/bin/i3mic.py
 	chmod +x ~/.local/bin/i3datetime.py
 	chmod +x ~/.local/bin/scratchpad
 	chmod +x ~/.local/bin/i3cpu.py
