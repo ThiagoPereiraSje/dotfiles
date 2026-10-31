@@ -13,7 +13,7 @@ install_deps:
 	# instalar aplicativos
 	sudo apt install -y --no-install-recommends --no-install-suggests\
 		polkitd waybar wofi foot htop pcmanfm xwayland bash-completion\
-		nwg-look wdisplays pipewire pipewire-pulse pipewire-audio-client-libraries wireplumber\
+		nwg-look wdisplays pipewire pipewire-pulse wireplumber\
 		bluetooth libspa-0.2-bluetooth blueman neovim\
 		xdg-desktop-portal xdg-desktop-portal-hyprland xdg-desktop-portal-gtk\
 		grim slurp wl-clipboard brightnessctl\
