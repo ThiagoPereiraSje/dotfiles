@@ -11,7 +11,7 @@ install_deps:
 	sudo apt install -t trixie-backports hyprland -y
 
 	# instalar aplicativos
-	sudo apt install -y\
+	sudo apt install -y --no-install-recommends --no-install-suggests\
 		polkitd waybar wofi foot htop pcmanfm xwayland bash-completion\
 		nwg-look wdisplays pipewire pipewire-pulse wireplumber\
 		bluetooth libspa-0.2-bluetooth blueman neovim\
