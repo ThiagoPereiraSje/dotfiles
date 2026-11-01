@@ -1,6 +1,6 @@
 .SILENT:
 
-install: install_deps hyper_config install_brave
+install: install_deps hyper_config install_apps
 
 install_deps:
 	sudo apt update
@@ -70,14 +70,19 @@ hyper_config:
 	echo "Configuração do hyperland finalizada com sucesso!"
 
 
-install_brave:
+install_apps:
+	# brave
 	sudo apt install -y curl
 	sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 	sudo curl -fsSLo /etc/apt/sources.list.d/brave-browser-release.sources https://brave-browser-apt-release.s3.brave.com/brave-browser.sources
 	sudo apt update
 	sudo apt install -y brave-browser
 
-	echo "Instalação do brave finalizada com sucesso!"
+	# code-server
+	curl -fsSL https://code-server.dev/install.sh | sh
+	sudo systemctl enable --now code-server@$USER
+
+	echo "Instalação das aplicações finalizada com sucesso!"
 
 
 test:
