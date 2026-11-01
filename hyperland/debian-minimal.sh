@@ -4,11 +4,6 @@ install: install_deps hyper_config install_brave
 
 install_deps:
 	sudo apt update
-	echo "deb http://deb.debian.org/debian trixie-backports main" | sudo tee /etc/apt/sources.list.d/backports.list
-	sudo apt update
-
-	# instalar o hyperland
-	sudo apt install -t trixie-backports hyprland -y
 
 	# instalar aplicativos
 	sudo apt install -y --no-install-recommends --no-install-suggests\
@@ -18,11 +13,18 @@ install_deps:
 		xdg-desktop-portal xdg-desktop-portal-hyprland xdg-desktop-portal-gtk\
 		grim slurp wl-clipboard brightnessctl\
 		papirus-icon-theme wlogout fonts-dejavu
-
+	
 	# pacotes gráficos
 	sudo apt install -y\
 		firmware-amd-graphics libgl1-mesa-dri libglx-mesa0\
 		mesa-vulkan-drivers mesa-utils vulkan-tools
+
+	# adicionar repositório trixie-backports
+	echo "deb http://deb.debian.org/debian trixie-backports main" | sudo tee /etc/apt/sources.list.d/backports.list
+	sudo apt update
+
+	# instalar o hyperland
+	sudo apt install -t trixie-backports hyprland -y
 
 	# remover recursos não utilizados
 	sudo apt autoremove -y
