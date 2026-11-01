@@ -46,7 +46,7 @@ hyper_config:
 	mkdir -p ~/.themes
 
 	# copiar configurações
-	cp -f /usr/share/hyprland/hyprland.conf ~/.config/hypr/hyprland.conf	
+	cp -f /hyperland/hyprland.lua ~/.config/hypr/hyprland.lua
 	cp -f sway/waybar/config.conf ~/.config/waybar/config
 	cp -f sway/waybar/style.css ~/.config/waybar/style.css
 	cp -f sway/waybar/wl_date.py ~/.config/waybar/wl_date.py
