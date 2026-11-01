@@ -85,7 +85,9 @@ install_apps:
 
 	# code-server
 	curl -fsSL https://code-server.dev/install.sh | sh
-	sudo systemctl enable --now code-server@$USER
+
+	# habilitar code-server
+	# sudo systemctl enable --now code-server@$USER
 
 	echo "Instalação das aplicações finalizada com sucesso!"
 
