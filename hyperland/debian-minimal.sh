@@ -65,7 +65,7 @@ hyper_config:
 	cp -f wallpapers/* ~/.local/wallpapers
 	cp -f -r themes/* ~/.themes
 
-	echo "Configuração do sway finalizada com sucesso!"
+	echo "Configuração do hyperland finalizada com sucesso!"
 
 
 install_brave:
