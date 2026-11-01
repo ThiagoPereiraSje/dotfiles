@@ -1,0 +1,48 @@
+* {
+  font-family: UbuntuNerdFont-Medium;
+  font-size: 14px;
+  min-height: 0;
+  color: #bbb;
+}
+
+window#waybar {
+  background-color: #000;
+}
+
+#workspaces button {
+  margin: 0px;
+  padding: 4px;
+}
+
+#workspaces button:hover {
+  background-color: #111;
+}
+
+#workspaces button.active,
+#workspaces button.focused {
+  border-bottom: 1px solid #4c7899;
+}
+
+#custom-cpu.low {
+  color: #98c379;
+}
+
+#custom-cpu.normal {
+  color: #e5c07b;
+}
+
+#custom-cpu.hight {
+  color: #e06c75;
+}
+
+#custom-mem.low {
+  color: #98c379;
+}
+
+#custom-mem.normal {
+  color: #e5c07b;
+}
+
+#custom-mem.hight {
+  color: #e06c75;
+}
