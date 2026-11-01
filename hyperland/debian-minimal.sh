@@ -6,7 +6,7 @@ install_deps:
 	sudo apt update
 
 	# instalar aplicativos
-	sudo apt install -y --no-install-recommends --no-install-suggests\
+	sudo apt install -y\
 		polkitd waybar wofi foot htop pcmanfm xwayland bash-completion\
 		nwg-look wdisplays pipewire pipewire-pulse wireplumber\
 		bluetooth libspa-0.2-bluetooth blueman neovim\
@@ -24,7 +24,7 @@ install_deps:
 	sudo apt update
 
 	# instalar o hyperland
-	sudo apt install -t trixie-backports hyprland xdg-desktop-portal-hyprland -y
+	sudo apt install -t trixie-backports hyprland hyprland-guiutils xdg-desktop-portal-hyprland -y
 
 	# remover recursos não utilizados
 	sudo apt autoremove -y
