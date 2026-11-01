@@ -12,7 +12,7 @@ install_deps:
 		bluetooth libspa-0.2-bluetooth blueman neovim\
 		xdg-desktop-portal xdg-desktop-portal-gtk\
 		grim slurp wl-clipboard brightnessctl\
-		papirus-icon-theme wlogout fonts-dejavu
+		papirus-icon-theme wlogout
 	
 	# pacotes gráficos
 	sudo apt install -y\
@@ -40,6 +40,7 @@ hyper_config:
 	mkdir -p ~/.config/wofi
 
 	# criar diretórios de assets
+	mkdir -p ~/.local/share/fonts
 	mkdir -p ~/.local/share/applications
 	mkdir -p ~/.local/wallpapers
 	mkdir -p ~/.local/bin
@@ -62,6 +63,7 @@ hyper_config:
 	cp -f sway/wofi/style.css ~/.config/wofi/style.css
 
 	# copiar assets
+	cp -f fonts/*.ttf ~/.local/share/fonts
 	cp -f wallpapers/* ~/.local/wallpapers
 	cp -f -r themes/* ~/.themes
 
