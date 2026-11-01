@@ -38,6 +38,7 @@ hyper_config:
 	mkdir -p ~/.config/hypr
 	mkdir -p ~/.config/waybar
 	mkdir -p ~/.config/wofi
+	mkdir -p ~/.config/foot
 
 	# criar diretórios de assets
 	mkdir -p ~/.local/share/fonts
@@ -59,6 +60,9 @@ hyper_config:
 	chmod +x ~/.config/waybar/wl_cpu.py
 	chmod +x ~/.config/waybar/wl_mem.py
 	chmod +x ~/.config/waybar/wl_mic.py
+
+	# copiar configurações do terminal
+	cp -f hyperland/foot/foot.ini ~/.config/foot/foot.ini
 
 	cp -f sway/wofi/config.conf ~/.config/wofi/config
 	cp -f sway/wofi/style.css ~/.config/wofi/style.css
