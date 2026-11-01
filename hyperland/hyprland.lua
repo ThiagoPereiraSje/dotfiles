@@ -30,7 +30,7 @@ hl.monitor({
 -- Set programs that you use
 local terminal    = "foot"
 local fileManager = "pcmanfm"
-local menu        = "hyprlauncher"
+local menu        = "wofi --show drun"
 
 
 -------------------
@@ -86,7 +86,7 @@ hl.env("HYPRCURSOR_SIZE", "24")
 hl.config({
     general = {
         gaps_in  = 5,
-        gaps_out = 20,
+        gaps_out = 5,
 
         border_size = 2,
 
