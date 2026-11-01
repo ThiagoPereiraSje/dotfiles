@@ -10,7 +10,7 @@ install_deps:
 		polkitd waybar wofi foot htop pcmanfm xwayland bash-completion\
 		nwg-look wdisplays pipewire pipewire-pulse wireplumber\
 		bluetooth libspa-0.2-bluetooth blueman neovim\
-		xdg-desktop-portal xdg-desktop-portal-hyprland xdg-desktop-portal-gtk\
+		xdg-desktop-portal xdg-desktop-portal-gtk\
 		grim slurp wl-clipboard brightnessctl\
 		papirus-icon-theme wlogout fonts-dejavu
 	
@@ -24,7 +24,7 @@ install_deps:
 	sudo apt update
 
 	# instalar o hyperland
-	sudo apt install -t trixie-backports hyprland -y
+	sudo apt install -t trixie-backports hyprland xdg-desktop-portal-hyprland -y
 
 	# remover recursos não utilizados
 	sudo apt autoremove -y
