@@ -31,6 +31,7 @@ hl.monitor({
 local terminal    = "foot"
 local fileManager = "pcmanfm"
 local menu        = "wofi --show drun"
+local logout      = "wlogout"
 
 
 -------------------
@@ -44,7 +45,8 @@ local menu        = "wofi --show drun"
 --
 hl.on("hyprland.start", function ()
 --   hl.exec_cmd("nm-applet")
-  hl.exec_cmd("waybar & hyprpaper")
+  hl.exec_cmd("swaybg -i ~/.local/wallpapers/w02.jpg -m fill")
+  hl.exec_cmd("waybar")
 end)
 
 
@@ -262,6 +264,9 @@ hl.bind(mainMod .. " + E", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
+
+-- logout
+hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.exec_cmd(logout))
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))

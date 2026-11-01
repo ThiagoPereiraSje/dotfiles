@@ -12,7 +12,7 @@ install_deps:
 		bluetooth libspa-0.2-bluetooth blueman neovim\
 		xdg-desktop-portal xdg-desktop-portal-gtk\
 		grim slurp wl-clipboard brightnessctl\
-		papirus-icon-theme wlogout
+		papirus-icon-theme wlogout swaybg
 	
 	# pacotes gráficos
 	sudo apt install -y\
@@ -24,7 +24,7 @@ install_deps:
 	sudo apt update
 
 	# instalar o hyperland
-	sudo apt install -t trixie-backports hyprland hyprpaper hyprland-guiutils xdg-desktop-portal-hyprland -y
+	sudo apt install -t trixie-backports hyprland hyprland-guiutils xdg-desktop-portal-hyprland -y
 
 	# remover recursos não utilizados
 	sudo apt autoremove -y
@@ -49,7 +49,6 @@ hyper_config:
 
 	# copiar configurações
 	cp -f hyperland/hyprland.lua ~/.config/hypr/hyprland.lua
-	cp -f hyperland/hyprpaper.conf ~/.config/hypr/hyprpaper.conf
 	cp -f hyperland/waybar/config.conf ~/.config/waybar/config
 	cp -f hyperland/waybar/style.css ~/.config/waybar/style.css
 	cp -f hyperland/waybar/wl_date.py ~/.config/waybar/wl_date.py
