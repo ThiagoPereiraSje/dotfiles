@@ -6,7 +6,7 @@ install_deps:
 	sudo apt update
 
 	# instalar aplicativos
-	sudo apt install -y\
+	sudo apt install -y --no-install-suggests\
 		polkitd waybar wofi foot htop pcmanfm xwayland bash-completion\
 		nwg-look wdisplays pipewire pipewire-pulse wireplumber\
 		bluetooth libspa-0.2-bluetooth blueman neovim\
@@ -15,7 +15,7 @@ install_deps:
 		papirus-icon-theme wlogout swaybg
 	
 	# pacotes gráficos
-	sudo apt install -y\
+	sudo apt install -y --no-install-suggests\
 		firmware-amd-graphics libgl1-mesa-dri libglx-mesa0\
 		mesa-vulkan-drivers mesa-utils vulkan-tools
 
