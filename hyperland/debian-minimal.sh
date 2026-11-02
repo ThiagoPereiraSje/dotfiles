@@ -24,7 +24,7 @@ install_deps:
 	sudo apt update
 
 	# instalar o hyperland
-	sudo apt install -t trixie-backports hyprland hypridle hyprland-guiutils xdg-desktop-portal-hyprland -y
+	sudo apt install -t trixie-backports hyprland hyprpolkitagent hypridle hyprland-guiutils xdg-desktop-portal-hyprland -y
 
 	# remover recursos não utilizados
 	sudo apt autoremove -y
