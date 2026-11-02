@@ -12,7 +12,7 @@ install_deps:
 		bluetooth libspa-0.2-bluetooth blueman neovim\
 		xdg-desktop-portal xdg-desktop-portal-gtk\
 		grim slurp wl-clipboard brightnessctl\
-		papirus-icon-theme wlogout swaybg
+		papirus-icon-theme wlogout swaybg jq
 	
 	# pacotes gráficos
 	sudo apt install -y --no-install-suggests\
@@ -56,10 +56,12 @@ hyper_config:
 	cp -f hyperland/waybar/wl_cpu.py ~/.config/waybar/wl_cpu.py
 	cp -f hyperland/waybar/wl_mem.py ~/.config/waybar/wl_mem.py
 	cp -f hyperland/waybar/wl_mic.py ~/.config/waybar/wl_mic.py
+	cp -f hyperland/waybar/wl_magic.sh ~/.config/waybar/wl_magic.sh
 	chmod +x ~/.config/waybar/wl_date.py
 	chmod +x ~/.config/waybar/wl_cpu.py
 	chmod +x ~/.config/waybar/wl_mem.py
 	chmod +x ~/.config/waybar/wl_mic.py
+	chmod +x ~/.config/waybar/wl_magic.sh
 
 	# copiar configurações do terminal
 	cp -f hyperland/foot/foot.ini ~/.config/foot/foot.ini
