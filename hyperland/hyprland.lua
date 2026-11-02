@@ -284,9 +284,10 @@ for i = 1, 10 do
 end
 
 -- fullscreen
-hl.bind(mainMod .. " + SHIFT + F", function()
-    hl.dispatch("fullscreen", "0")
-end)
+hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({
+    mode = "fullscreen",
+    action = "toggle"
+}))
 
 -- Example special workspace (scratchpad)
 hl.bind(mainMod .. " + S",         hl.dsp.workspace.toggle_special("magic"))
