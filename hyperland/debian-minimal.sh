@@ -24,7 +24,7 @@ install_deps:
 	sudo apt update
 
 	# instalar o hyperland
-	sudo apt install -t trixie-backports hyprland hyprland-guiutils xdg-desktop-portal-hyprland -y
+	sudo apt install -t trixie-backports hyprland hypridle hyprland-guiutils xdg-desktop-portal-hyprland -y
 
 	# remover recursos não utilizados
 	sudo apt autoremove -y
@@ -49,6 +49,7 @@ hyper_config:
 
 	# copiar configurações
 	cp -f hyperland/hyprland.lua ~/.config/hypr/hyprland.lua
+	cp -f hyperland/hypridle.conf ~/.config/hypr/hypridle.conf
 	cp -f hyperland/waybar/config.conf ~/.config/waybar/config
 	cp -f hyperland/waybar/style.css ~/.config/waybar/style.css
 	cp -f hyperland/waybar/wl_date.py ~/.config/waybar/wl_date.py
