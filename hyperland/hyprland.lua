@@ -46,7 +46,8 @@ local logout      = "wlogout"
 hl.on("hyprland.start", function ()
 --   hl.exec_cmd("nm-applet")
   hl.exec_cmd("swaybg -i ~/.local/wallpapers/w02.jpg -m fill")
-  hl.exec_cmd("waybar & hypridle")
+  hl.exec_cmd("hypridle")
+  hl.exec_cmd("waybar")
 end)
 
 
