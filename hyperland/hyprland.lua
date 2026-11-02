@@ -285,7 +285,7 @@ end
 
 -- fullscreen
 hl.bind(mainMod .. " + SHIFT + F", function()
-    hl.dsp.fullscreen()
+    hl.dispatch("fullscreen", "0")
 end)
 
 -- Example special workspace (scratchpad)
